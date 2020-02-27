@@ -6,7 +6,7 @@
 |email|string|null: false|
 |password|string|null: false|
 |tel_number|integer|null: false|
-|profile_image|integer||
+|profile_image|string||
 ### Association
 - has_many :groups, through: :groups_users
 - has_many :groups_users
@@ -66,7 +66,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text||
-|image|string||
+|forum_post_image|string||
 ### Association
 - belongs_to :user
 - has_many :groups, through: :groups_messages
