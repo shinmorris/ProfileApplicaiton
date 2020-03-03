@@ -13,7 +13,72 @@
     &__post{
       height: calc(100vh - 80px);
       width: calc(100vw - 80px);
+      color: red;
+    }
+    &__post-region{
+      display: inline-block;
+    }
+    &__post-region--icon p{
+      color:green;
+      float: left;
+    }
+    &__post-region--icon-name p {
+    }
+    &__post-region--content{
+      height: 100px;
+      width: calc(100vw - 80px);
+    }
+    &__post-region--image{
 
+    }
+    &__post-region--destroy-button{
+
+    }
+    &__post-region--edit-button{
+      float: left;
+    }
+    &__post-region--reply-button{
+      float: left;
+    }
+    &__post-region--stamp{
+      float: left;
+    }
+
+
+
+  .form{
+    height: 70px;
+    width: calc(100vw - 80px);
+    // text-align: center;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+      &__message{
+        float: left;
+        height: 30px;
+        width: 70vw;
+      }
+      &__mask{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__image{
+          font-size: 20px;
+          line-height: 50px;
+        }
+        .hidden{
+          display:none;
+        }
+      }
+      .form__submit{
+        float: left;
+      }
+    .new_message{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     }
   }
 

@@ -1,19 +1,32 @@
 .Bulletin-board
   .Bulletin-board-area
     .Bulletin-board-area__post
-      .Bulletin-board-area__post--icon
-      .Bulletin-board-area__post--content
-      .Bulletin-board-area__post--image
-      .Bulletin-board-area__post--reply-button
-      .Bulletin-board-area__post--stamp
-      .form
+      .Bulletin-board-area__post-region
+        .Bulletin-board-area__post-region--icon
+          %p ●
+        .Bulletin-board-area__post-region--icon-name
+          %p 名前
+        .Bulletin-board-area__post-region--content
+          %p 投稿内容
+        .Bulletin-board-area__post-region--image
+          画像
+        .Bulletin-board-area__post-region--destroy-button
+        | 削除 |
+        .Bulletin-board-area__post-region--edit-button
+        | edit |
+        .Bulletin-board-area__post-region--reply-button
+        | リプライボタン |
+        .Bulletin-board-area__post-region--stamp
+        | 😊　スタンプ |
+
+    .form
       = form_for [@message] do |f|
         = f.text_field :body, class: 'form__message', placeholder: 'type a message'
         .form__mask
           = f.label :image, class: 'form__mask__image' do
             = icon('fas', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+          = f.submit 'Send', class: 'form__submit'
 
 
   .Side-bar
