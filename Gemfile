@@ -58,3 +58,5 @@ gem 'pry-rails'
 gem 'sprockets', '3.7.2'
 gem "font-awesome-sass"
 gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
