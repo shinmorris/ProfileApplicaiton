@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.Bulletin-board{
+  display: flex;
+  .Bulletin-board-area{
+    height: 100vh;
+    width: calc(100vw - 60px);
+    background-color: rgb(214, 208, 208);
+    float: left;
+    padding: 10px 0px 0px 10px;
+    &__post{
+      height: calc(100vh - 80px);
+      width: calc(100vw - 80px);
+      color: red;
+    }
+    &__post-region{
+      display: inline-block;
+    }
+    &__post-region--icon p{
+      color:green;
+      float: left;
+    }
+    &__post-region--icon-name p {
+    }
+    &__post-region--content{
+      height: 100px;
+      width: calc(100vw - 80px);
+    }
+    &__post-region--image{
+
+    }
+    &__post-region--destroy-button{
+
+    }
+    &__post-region--edit-button{
+      float: left;
+    }
+    &__post-region--reply-button{
+      float: left;
+    }
+    &__post-region--stamp{
+      float: left;
+    }
+
+
+
+  .form{
+    height: 70px;
+    width: calc(100vw - 80px);
+    // text-align: center;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+      &__message{
+        float: left;
+        height: 30px;
+        width: 70vw;
+      }
+      &__mask{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__image{
+          font-size: 20px;
+          line-height: 50px;
+        }
+        .hidden{
+          display:none;
+        }
+      }
+      .form__submit{
+        float: left;
+      }
+    .new_message{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    }
+  }
+
+
+  .Side-bar{
+    height: 100vh;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(91, 189, 246);
+    float: left;
+    position: relative;
+    &__switching-page{
+      display: inline-block;
+      position: absolute;
+      bottom: 20px;
+      &--Group-chat-button p{
+        margin: 20px 0px 20px;
+      }
+      &--My-profile-button p{
+        margin: 20px 0px 20px;
+      }
+      &--Another-group-button p{
+        margin: 20px 0px 20px;
+      }
+      &--Bulletin-board-button p{
+        margin: 20px 0px 20px;
+      }
+
+    }
+  }
+
+}
