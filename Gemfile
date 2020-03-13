@@ -8,8 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
-gem 'puma', '>= 4.3.3'
-# Use SCSS for stylesheets
+gem 'puma', '>= 4.3.3'# Use SCSS for stylesheets
 gem 'sassc-rails'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
@@ -54,5 +53,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'pry-rails'
-gem 'compass-rails', '3.1.0'
+# gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
+gem "font-awesome-sass"
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
