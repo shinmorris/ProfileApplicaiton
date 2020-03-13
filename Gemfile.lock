@@ -253,11 +253,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4)
   pry-rails
-<<<<<<< HEAD
   puma (>= 4.3.3)
-=======
-  puma (~> 4.3)
->>>>>>> c157dcdcf96746d7f92fddf0d0e6aea8ec5abff2
   rails (~> 6.0.2, >= 6.0.2.1)
   sassc-rails
   selenium-webdriver
