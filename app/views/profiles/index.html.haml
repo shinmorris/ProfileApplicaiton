@@ -32,6 +32,9 @@
 
   .Side-bar
     .Side-bar__switching-page
+      .Side-bar__switching-page--Group-edit-button
+        %a{href: "/groups/1/edit"}
+          =icon('fas', 'fas fa-user-edit fa-lg', class: 'icon')
       .Side-bar__switching-page--Group-chat-button
         %p
           =icon('fas', 'fas fa-user-friends fa-lg', class: 'icon')
