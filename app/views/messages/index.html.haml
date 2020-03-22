@@ -1,25 +1,8 @@
+messageだよ
 .Bulletin-board
   .Bulletin-board-area
     .Bulletin-board-area__post
-      .Bulletin-board-area__post-region
-        .Bulletin-board-area__post-region--icon
-          %p ●
-        .Bulletin-board-area__post-region--icon-name
-          = current_user.name
-        .Bulletin-board-area__post-region--content
-          %p 投稿内容
-        .Bulletin-board-area__post-region--image
-          画像
-        .Bulletin-board-area__post-region--destroy-button
-        | 削除 |
-        .Bulletin-board-area__post-region--edit-button
-        = link_to edit_user_path(current_user) do
-          = icon('fas', 'cog', class: 'icon')
-        .Bulletin-board-area__post-region--reply-button
-        | リプライボタン |
-        .Bulletin-board-area__post-region--stamp
-        | 😊スタンプ |
-
+      = render @messages
     .form
       = form_for [@messages] do |f|
         = f.text_field :body, class: 'form__message', placeholder: 'type a message'

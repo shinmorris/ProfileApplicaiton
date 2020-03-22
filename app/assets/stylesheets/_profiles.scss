@@ -96,16 +96,19 @@
       display: inline-block;
       position: absolute;
       bottom: 20px;
-      &--Group-chat-button p{
+      &--Group-edit-button {
         margin: 20px 0px 20px;
       }
-      &--My-profile-button p{
+      &--Group-chat-button {
         margin: 20px 0px 20px;
       }
-      &--Another-group-button p{
+      &--My-profile-button {
         margin: 20px 0px 20px;
       }
-      &--Bulletin-board-button p{
+      &--Another-group-button {
+        margin: 20px 0px 20px;
+      }
+      &--Bulletin-board-button {
         margin: 20px 0px 20px;
       }
 

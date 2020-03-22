@@ -1,0 +1,7 @@
+%p 個別チャットだよ
+.group_list
+  - current_user.groups.each do |group|
+    %p
+      = group.name
+      = link_to messages_path(group.id) do
+        %p ●
