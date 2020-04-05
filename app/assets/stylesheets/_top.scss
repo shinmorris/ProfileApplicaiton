@@ -1,0 +1,22 @@
+.main{
+  height: 100%;
+  width: 100%;
+  .header{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(115, 215, 255);
+    p{
+      font-size: 50px;
+    }
+  }
+
+  .body{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .footer{
+    height: 100vh;
+    width: 100vw;
+  }
+}

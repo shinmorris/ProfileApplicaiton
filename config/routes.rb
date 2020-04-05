@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'profiles#index'
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+  root  'top#index'
   resources :groups,   only: [:index, :new, :create, :edit, :update] do
     resources :messages, only: [:index, :create, :update, :destroy]
   end

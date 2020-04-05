@@ -3,9 +3,10 @@ messageだよ
 .Bulletin-board
   .Bulletin-board-area
     .Bulletin-board-area__post
+      -# = link_to render @messages
       = render @messages
     .form
-      = form_for [@group,@messages] do |f|
+      = form_for [@group,@message] do |f|
         = f.text_field :body, class: 'form__message', placeholder: 'type a message'
         .form__mask
           = f.label :image, class: 'form__mask__image' do
@@ -25,9 +26,3 @@ messageだよ
       .Side-bar__switching-page--My-profile-button
         = link_to users_path(current_user) do
           =icon('fas', 'far fa-address-card fa-lg', class: 'icon')
-      .Side-bar__switching-page--Another-group-button
-        = link_to groups_path(current_user) do
-          =icon('fas', 'fas fa-user-plus fa-lg', class: 'icon')
-      .Side-bar__switching-page--Bulletin-board-button
-        = link_to groups_path(current_user) do
-          =icon('fas', 'fas fa-th-list fa-lg', class: 'icon')
